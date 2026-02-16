@@ -188,58 +188,101 @@
         </div>
 
         <div class="cards">
-          <!-- Project 1 -->
-          <article class="card project-card reveal" data-category="frontend">
-            <div class="card__top">
-              <span class="badge" data-i18n="badge_frontend">FRONTEND</span>
-              <span class="miniicon" aria-hidden="true">✨</span>
-            </div>
+<div class="cards">
+  <!-- Project 1 -->
+  <article class="card project-card reveal" data-category="frontend">
+    <div class="card__media">
+      <!-- src="assets/img/portfolio-lite.png" -->
+      <div class="media-placeholder" aria-hidden="true"></div>
+    </div>
 
-            <h3 class="card__title" data-i18n="p1_title">Portfolio Lite</h3>
-            <p class="card__desc" data-i18n="p1_desc">
-              Modern portfolio with EN/NL language switch and clean layout.
-            </p>
-
-            <div class="card__links">
-              <a class="link" href="https://github.com/AhmetR42/portfolio-lite" target="_blank" rel="noreferrer">
-                <span data-i18n="repo_link">Repo</span> ↗
-              </a>
-              <span class="muted" data-i18n="live_soon">Live soon</span>
-            </div>
-          </article>
-
-          <!-- Project 2 -->
-          <article class="card project-card reveal" data-category="fullstack">
-            <div class="card__top">
-              <span class="badge badge--soon" data-i18n="badge_soon">SOON</span>
-              <span class="miniicon" aria-hidden="true">🧩</span>
-            </div>
-
-            <h3 class="card__title" data-i18n="p2_title">Kanban Board</h3>
-            <p class="card__desc" data-i18n="p2_desc">Drag & drop task board using localStorage.</p>
-
-            <div class="card__links">
-              <span class="muted" data-i18n="repo_soon">Repo soon</span>
-            </div>
-          </article>
-
-          <!-- Example Unity placeholder -->
-          <article class="card project-card reveal" data-category="unity">
-            <div class="card__top">
-              <span class="badge badge--soon" data-i18n="badge_soon">SOON</span>
-              <span class="miniicon" aria-hidden="true">🎮</span>
-            </div>
-
-            <h3 class="card__title" data-i18n="p3_title">Unity Mini Game</h3>
-            <p class="card__desc" data-i18n="p3_desc">A small 2D game prototype (learning project).</p>
-
-            <div class="card__links">
-              <span class="muted" data-i18n="repo_soon">Repo soon</span>
-            </div>
-          </article>
-        </div>
+    <div class="card__body">
+      <div class="card__top">
+        <span class="badge" data-i18n="badge_frontend">FRONTEND</span>
+        <span class="miniicon" aria-hidden="true">✨</span>
       </div>
-    </section>
+
+      <h3 class="card__title" data-i18n="p1_title">Portfolio Lite</h3>
+      <p class="card__desc" data-i18n="p1_desc">
+        Modern portfolio with EN/NL language switch and clean layout.
+      </p>
+
+      <div class="stack" aria-label="Tech stack">
+        <span class="stack__item">HTML</span>
+        <span class="stack__dot">•</span>
+        <span class="stack__item">CSS</span>
+        <span class="stack__dot">•</span>
+        <span class="stack__item">JavaScript</span>
+      </div>
+
+      <div class="card__links">
+        <a class="link" href="https://github.com/AhmetR42/portfolio-lite" target="_blank" rel="noreferrer">
+          <span data-i18n="repo_link">Repo</span> ↗
+        </a>
+        <!--  When you open GitHub Pages put here live link -->
+        <a class="link link--soft" href="#" target="_blank" rel="noreferrer" data-i18n="live_link">Live</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- Project 2 -->
+  <article class="card project-card reveal" data-category="fullstack">
+    <div class="card__media">
+      <div class="media-placeholder media-placeholder--2" aria-hidden="true"></div>
+    </div>
+
+    <div class="card__body">
+      <div class="card__top">
+        <span class="badge badge--soon" data-i18n="badge_soon">SOON</span>
+        <span class="miniicon" aria-hidden="true">🧩</span>
+      </div>
+
+      <h3 class="card__title" data-i18n="p2_title">Kanban Board</h3>
+      <p class="card__desc" data-i18n="p2_desc">Drag & drop task board using localStorage.</p>
+
+      <div class="stack" aria-label="Tech stack">
+        <span class="stack__item">JavaScript</span>
+        <span class="stack__dot">•</span>
+        <span class="stack__item">LocalStorage</span>
+        <span class="stack__dot">•</span>
+        <span class="stack__item">Drag & Drop</span>
+      </div>
+
+      <div class="card__links">
+        <span class="muted" data-i18n="repo_soon">Repo soon</span>
+      </div>
+    </div>
+  </article>
+
+  <!-- Project 3 (Unity placeholder) -->
+  <article class="card project-card reveal" data-category="unity">
+    <div class="card__media">
+      <div class="media-placeholder media-placeholder--3" aria-hidden="true"></div>
+    </div>
+
+    <div class="card__body">
+      <div class="card__top">
+        <span class="badge badge--soon" data-i18n="badge_soon">SOON</span>
+        <span class="miniicon" aria-hidden="true">🎮</span>
+      </div>
+
+      <h3 class="card__title" data-i18n="p3_title">Unity Mini Game</h3>
+      <p class="card__desc" data-i18n="p3_desc">A small 2D game prototype (learning project).</p>
+
+      <div class="stack" aria-label="Tech stack">
+        <span class="stack__item">Unity</span>
+        <span class="stack__dot">•</span>
+        <span class="stack__item">C#</span>
+        <span class="stack__dot">•</span>
+        <span class="stack__item">2D</span>
+      </div>
+
+      <div class="card__links">
+        <span class="muted" data-i18n="repo_soon">Repo soon</span>
+      </div>
+    </div>
+  </article>
+</div>
 
     <!-- Contact -->
     <section id="contact" class="section section--alt reveal">

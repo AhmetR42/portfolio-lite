@@ -1,5 +1,6 @@
 const translations = {
   en: {
+    live_link: "Live",
     brand: "Ahmet",
     nav_about: "About",
     nav_skills: "Skills",
@@ -68,6 +69,7 @@ const translations = {
   },
 
   nl: {
+    live_link: "Live",
     brand: "Ahmet",
     nav_about: "Over mij",
     nav_skills: "Vaardigheden",
