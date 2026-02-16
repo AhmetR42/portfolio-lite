@@ -1,16 +1,12 @@
-const items = document.querySelectorAll(".hero, .card");
+const revealEls = document.querySelectorAll(".reveal");
 
-items.forEach(el => {
-  el.style.opacity = 0;
-  el.style.transform = "translateY(20px)";
-});
-
-window.addEventListener("load", () => {
-  items.forEach((el, i) => {
-    setTimeout(() => {
-      el.style.transition = "all .6s ease";
-      el.style.opacity = 1;
-      el.style.transform = "translateY(0)";
-    }, i * 150);
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("is-visible");
+      io.unobserve(entry.target);
+    }
   });
-});
+}, { threshold: 0.12 });
+
+revealEls.forEach(el => io.observe(el));

@@ -33,6 +33,7 @@
           <button class="lang__btn" type="button" data-lang="en" aria-pressed="true">EN</button>
           <button class="lang__btn" type="button" data-lang="nl" aria-pressed="false">NL</button>
         </div>
+
         <a class="btn btn--ghost" href="https://github.com/AhmetR42" target="_blank" rel="noreferrer">
           <span data-i18n="cta_github">GitHub</span>
           <span aria-hidden="true">↗</span>
@@ -55,10 +56,11 @@
 
   <main id="home">
     <!-- Hero -->
-    <section class="hero">
+    <section class="hero reveal">
       <div class="container hero__grid">
         <div class="hero__copy">
           <p class="kicker" data-i18n="kicker">Software Developer • MBO ICT</p>
+
           <h1 class="hero__title">
             <span data-i18n="hero_title_line1">Building</span>
             <span class="accent" data-i18n="hero_title_line2">full-stack</span>
@@ -91,7 +93,7 @@
           </div>
         </div>
 
-        <div class="hero__card">
+        <div class="hero__card reveal">
           <div class="stat">
             <p class="stat__label" data-i18n="stat_focus_label">Focus</p>
             <p class="stat__value" data-i18n="stat_focus_value">Full-stack (Laravel + SQL)</p>
@@ -136,14 +138,15 @@
     </section>
 
     <!-- About -->
-    <section id="about" class="section">
+    <section id="about" class="section reveal">
       <div class="container section__grid">
         <div>
           <h2 class="section__title" data-i18n="about_title">About</h2>
           <p class="section__text" data-i18n="about_text">
-            I’m a 2nd-year MBO ICT student. I enjoy building backend logic and connecting it to clean UI. This site is my learning journey.
+            I’m a 2nd-year MBO ICT student. I enjoy building backend logic and connecting it to clean UI.
           </p>
         </div>
+
         <div class="callout">
           <p class="callout__title" data-i18n="about_callout_t">What I’m working on</p>
           <ul class="list">
@@ -156,9 +159,10 @@
     </section>
 
     <!-- Skills -->
-    <section id="skills" class="section section--alt">
+    <section id="skills" class="section section--alt reveal">
       <div class="container">
         <h2 class="section__title" data-i18n="skills_title">Skills</h2>
+
         <div class="chips">
           <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span>
           <span class="chip">PHP</span><span class="chip">Laravel</span><span class="chip">SQL</span>
@@ -168,21 +172,34 @@
     </section>
 
     <!-- Projects -->
-    <section id="projects" class="section">
+    <section id="projects" class="section reveal">
       <div class="container">
         <div class="section__head">
           <h2 class="section__title" data-i18n="projects_title">Projects</h2>
           <p class="section__hint" data-i18n="projects_hint">Each project includes code, screenshots and a clear README.</p>
         </div>
 
+        <!-- Filters -->
+        <div class="filters" role="tablist" aria-label="Project filters">
+          <button class="filter-btn active" type="button" data-filter="all" data-i18n="filter_all">All</button>
+          <button class="filter-btn" type="button" data-filter="frontend" data-i18n="filter_frontend">Frontend</button>
+          <button class="filter-btn" type="button" data-filter="fullstack" data-i18n="filter_fullstack">Full-Stack</button>
+          <button class="filter-btn" type="button" data-filter="unity" data-i18n="filter_unity">Unity</button>
+        </div>
+
         <div class="cards">
-          <article class="card">
+          <!-- Project 1 -->
+          <article class="card project-card reveal" data-category="frontend">
             <div class="card__top">
               <span class="badge" data-i18n="badge_frontend">FRONTEND</span>
               <span class="miniicon" aria-hidden="true">✨</span>
             </div>
+
             <h3 class="card__title" data-i18n="p1_title">Portfolio Lite</h3>
-            <p class="card__desc" data-i18n="p1_desc">Modern portfolio with EN/NL language switch and clean layout.</p>
+            <p class="card__desc" data-i18n="p1_desc">
+              Modern portfolio with EN/NL language switch and clean layout.
+            </p>
+
             <div class="card__links">
               <a class="link" href="https://github.com/AhmetR42/portfolio-lite" target="_blank" rel="noreferrer">
                 <span data-i18n="repo_link">Repo</span> ↗
@@ -191,13 +208,31 @@
             </div>
           </article>
 
-          <article class="card">
+          <!-- Project 2 -->
+          <article class="card project-card reveal" data-category="fullstack">
             <div class="card__top">
               <span class="badge badge--soon" data-i18n="badge_soon">SOON</span>
               <span class="miniicon" aria-hidden="true">🧩</span>
             </div>
+
             <h3 class="card__title" data-i18n="p2_title">Kanban Board</h3>
             <p class="card__desc" data-i18n="p2_desc">Drag & drop task board using localStorage.</p>
+
+            <div class="card__links">
+              <span class="muted" data-i18n="repo_soon">Repo soon</span>
+            </div>
+          </article>
+
+          <!-- Example Unity placeholder -->
+          <article class="card project-card reveal" data-category="unity">
+            <div class="card__top">
+              <span class="badge badge--soon" data-i18n="badge_soon">SOON</span>
+              <span class="miniicon" aria-hidden="true">🎮</span>
+            </div>
+
+            <h3 class="card__title" data-i18n="p3_title">Unity Mini Game</h3>
+            <p class="card__desc" data-i18n="p3_desc">A small 2D game prototype (learning project).</p>
+
             <div class="card__links">
               <span class="muted" data-i18n="repo_soon">Repo soon</span>
             </div>
@@ -207,7 +242,7 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="section section--alt">
+    <section id="contact" class="section section--alt reveal">
       <div class="container section__grid">
         <div>
           <h2 class="section__title" data-i18n="contact_title">Contact</h2>
@@ -245,6 +280,8 @@
   </main>
 
   <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/filter.js"></script>
+  <script src="assets/js/reveal.js"></script>
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
 

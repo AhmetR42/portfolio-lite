@@ -34,7 +34,7 @@ const translations = {
     mini_4_d: "Clean commits",
 
     about_title: "About",
-    about_text: "I’m a 2nd-year MBO ICT student. I enjoy building backend logic and connecting it to clean UI. This site is my learning journey.",
+    about_text: "I’m a 2nd-year MBO ICT student. I enjoy building backend logic and connecting it to clean UI.",
     about_callout_t: "What I’m working on",
     about_li_1: "Laravel CRUD + auth",
     about_li_2: "REST APIs + SQL relations",
@@ -50,9 +50,16 @@ const translations = {
     p1_desc: "Modern portfolio with EN/NL language switch and clean layout.",
     p2_title: "Kanban Board",
     p2_desc: "Drag & drop task board using localStorage.",
+    p3_title: "Unity Mini Game",
+    p3_desc: "A small 2D game prototype (learning project).",
     repo_link: "Repo",
     live_soon: "Live soon",
     repo_soon: "Repo soon",
+
+    filter_all: "All",
+    filter_frontend: "Frontend",
+    filter_fullstack: "Full-Stack",
+    filter_unity: "Unity",
 
     contact_title: "Contact",
     contact_text: "Want to collaborate or discuss an internship? Send me a message.",
@@ -95,7 +102,7 @@ const translations = {
     mini_4_d: "Netjes committen",
 
     about_title: "Over mij",
-    about_text: "Ik ben een 2e-jaars MBO ICT student. Ik bouw graag backend logica en verbind dit met een strakke UI. Deze site is mijn leerproces.",
+    about_text: "Ik ben een 2e-jaars MBO ICT student. Ik bouw graag backend logica en verbind dit met een strakke UI.",
     about_callout_t: "Waar ik aan werk",
     about_li_1: "Laravel CRUD + auth",
     about_li_2: "REST API’s + SQL relaties",
@@ -111,9 +118,16 @@ const translations = {
     p1_desc: "Modern portfolio met EN/NL taalwissel en strakke layout.",
     p2_title: "Kanban Board",
     p2_desc: "Takenbord met drag & drop via localStorage.",
+    p3_title: "Unity Mini Game",
+    p3_desc: "Een kleine 2D game prototype (leerproject).",
     repo_link: "Repo",
     live_soon: "Live binnenkort",
     repo_soon: "Repo binnenkort",
+
+    filter_all: "Alle",
+    filter_frontend: "Frontend",
+    filter_fullstack: "Full-Stack",
+    filter_unity: "Unity",
 
     contact_title: "Contact",
     contact_text: "Wil je samenwerken of mijn stage bespreken? Stuur me een bericht.",
