@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ahmet — Developer Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <!-- Top bar -->
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="#home" aria-label="Go to top">
+        <span class="brand__dot" aria-hidden="true"></span>
+        <span data-i18n="brand">Ahmet</span>
+      </a>
+
+      <nav class="menu" aria-label="Primary navigation">
+        <a href="#about" data-i18n="nav_about">About</a>
+        <a href="#skills" data-i18n="nav_skills">Skills</a>
+        <a href="#projects" data-i18n="nav_projects">Projects</a>
+        <a href="#contact" data-i18n="nav_contact">Contact</a>
+      </nav>
+
+      <div class="actions">
+        <div class="lang" role="group" aria-label="Language selector">
+          <button class="lang__btn" type="button" data-lang="en" aria-pressed="true">EN</button>
+          <button class="lang__btn" type="button" data-lang="nl" aria-pressed="false">NL</button>
+        </div>
+        <a class="btn btn--ghost" href="https://github.com/AhmetR42" target="_blank" rel="noreferrer">
+          <span data-i18n="cta_github">GitHub</span>
+          <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+
+      <button class="hamburger" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="drawer" hidden>
+      <a href="#about" data-i18n="nav_about">About</a>
+      <a href="#skills" data-i18n="nav_skills">Skills</a>
+      <a href="#projects" data-i18n="nav_projects">Projects</a>
+      <a href="#contact" data-i18n="nav_contact">Contact</a>
+    </div>
+  </header>
+
+  <main id="home">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="kicker" data-i18n="kicker">Software Developer • MBO ICT</p>
+          <h1 class="hero__title">
+            <span data-i18n="hero_title_line1">Building</span>
+            <span class="accent" data-i18n="hero_title_line2">full-stack</span>
+            <span data-i18n="hero_title_line3">projects that look great and work fast.</span>
+          </h1>
+
+          <p class="hero__subtitle" data-i18n="hero_subtitle">
+            PHP/Laravel, JavaScript, SQL, Docker. I’m growing my GitHub with real projects for internships.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#projects">
+              <span data-i18n="cta_projects">View Projects</span>
+              <span aria-hidden="true">→</span>
+            </a>
+            <a class="btn btn--soft" href="#contact">
+              <span data-i18n="cta_contact">Contact</span>
+            </a>
+          </div>
+
+          <div class="hero__meta">
+            <div class="pill">
+              <span class="pill__dot" aria-hidden="true"></span>
+              <span data-i18n="meta_open">Open to internship</span>
+            </div>
+            <div class="pill">
+              <span aria-hidden="true">📍</span>
+              <span data-i18n="meta_location">Netherlands</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__card">
+          <div class="stat">
+            <p class="stat__label" data-i18n="stat_focus_label">Focus</p>
+            <p class="stat__value" data-i18n="stat_focus_value">Full-stack (Laravel + SQL)</p>
+          </div>
+          <div class="stat">
+            <p class="stat__label" data-i18n="stat_goal_label">Goal</p>
+            <p class="stat__value" data-i18n="stat_goal_value">Strong GitHub + portfolio</p>
+          </div>
+
+          <div class="mini-grid">
+            <div class="mini">
+              <span aria-hidden="true">⚡</span>
+              <div>
+                <p class="mini__t" data-i18n="mini_1_t">Clean code</p>
+                <p class="mini__d" data-i18n="mini_1_d">Readable structure</p>
+              </div>
+            </div>
+            <div class="mini">
+              <span aria-hidden="true">🧪</span>
+              <div>
+                <p class="mini__t" data-i18n="mini_2_t">Testing</p>
+                <p class="mini__d" data-i18n="mini_2_d">Basics + practice</p>
+              </div>
+            </div>
+            <div class="mini">
+              <span aria-hidden="true">🐳</span>
+              <div>
+                <p class="mini__t" data-i18n="mini_3_t">Docker</p>
+                <p class="mini__d" data-i18n="mini_3_d">Local dev setup</p>
+              </div>
+            </div>
+            <div class="mini">
+              <span aria-hidden="true">🗂️</span>
+              <div>
+                <p class="mini__t" data-i18n="mini_4_t">Git</p>
+                <p class="mini__d" data-i18n="mini_4_d">Clean commits</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container section__grid">
+        <div>
+          <h2 class="section__title" data-i18n="about_title">About</h2>
+          <p class="section__text" data-i18n="about_text">
+            I’m a 2nd-year MBO ICT student. I enjoy building backend logic and connecting it to clean UI. This site is my learning journey.
+          </p>
+        </div>
+        <div class="callout">
+          <p class="callout__title" data-i18n="about_callout_t">What I’m working on</p>
+          <ul class="list">
+            <li data-i18n="about_li_1">Laravel CRUD + auth</li>
+            <li data-i18n="about_li_2">REST APIs + SQL relations</li>
+            <li data-i18n="about_li_3">Dockerized development</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title" data-i18n="skills_title">Skills</h2>
+        <div class="chips">
+          <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span>
+          <span class="chip">PHP</span><span class="chip">Laravel</span><span class="chip">SQL</span>
+          <span class="chip">Docker</span><span class="chip">Git</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title" data-i18n="projects_title">Projects</h2>
+          <p class="section__hint" data-i18n="projects_hint">Each project includes code, screenshots and a clear README.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card__top">
+              <span class="badge" data-i18n="badge_frontend">FRONTEND</span>
+              <span class="miniicon" aria-hidden="true">✨</span>
+            </div>
+            <h3 class="card__title" data-i18n="p1_title">Portfolio Lite</h3>
+            <p class="card__desc" data-i18n="p1_desc">Modern portfolio with EN/NL language switch and clean layout.</p>
+            <div class="card__links">
+              <a class="link" href="https://github.com/AhmetR42/portfolio-lite" target="_blank" rel="noreferrer">
+                <span data-i18n="repo_link">Repo</span> ↗
+              </a>
+              <span class="muted" data-i18n="live_soon">Live soon</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__top">
+              <span class="badge badge--soon" data-i18n="badge_soon">SOON</span>
+              <span class="miniicon" aria-hidden="true">🧩</span>
+            </div>
+            <h3 class="card__title" data-i18n="p2_title">Kanban Board</h3>
+            <p class="card__desc" data-i18n="p2_desc">Drag & drop task board using localStorage.</p>
+            <div class="card__links">
+              <span class="muted" data-i18n="repo_soon">Repo soon</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section--alt">
+      <div class="container section__grid">
+        <div>
+          <h2 class="section__title" data-i18n="contact_title">Contact</h2>
+          <p class="section__text" data-i18n="contact_text">
+            Want to collaborate or discuss an internship? Send me a message.
+          </p>
+        </div>
+
+        <div class="contact">
+          <a class="contact__item" href="mailto:ahmet.resul.42@outlook.com">
+            <span class="contact__icon" aria-hidden="true">✉️</span>
+            <div>
+              <p class="contact__label" data-i18n="contact_email">Email</p>
+              <p class="contact__value">ahmet.resul.42@outlook.com</p>
+            </div>
+          </a>
+
+          <a class="contact__item" href="https://github.com/AhmetR42" target="_blank" rel="noreferrer">
+            <span class="contact__icon" aria-hidden="true">🐙</span>
+            <div>
+              <p class="contact__label">GitHub</p>
+              <p class="contact__value">AhmetR42</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p>© <span id="year"></span> <span data-i18n="brand">Ahmet</span></p>
+        <a class="link" href="#home" data-i18n="back_to_top">Back to top</a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="assets/js/i18n.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Mobile drawer
+    const burger = document.querySelector(".hamburger");
+    const drawer = document.querySelector(".drawer");
+    burger.addEventListener("click", () => {
+      const isOpen = burger.getAttribute("aria-expanded") === "true";
+      burger.setAttribute("aria-expanded", String(!isOpen));
+      drawer.hidden = isOpen;
+    });
+
+    // Close drawer on click
+    drawer?.querySelectorAll("a").forEach(a => a.addEventListener("click", () => {
+      burger.setAttribute("aria-expanded", "false");
+      drawer.hidden = true;
+    }));
+  </script>
+</body>
+</html>
